@@ -1,0 +1,18 @@
+import groovy.json.JsonOutput
+import groovy.json.JsonSlurper
+
+// project.projectDir
+// project.rootDir
+// project.rootProject
+// project.buildscript
+// System.getProperty("user.dir")
+
+buildscript {
+    apply from: project.file('init.gradle')
+
+    ourPlugins.applyRepos()
+    ourPlugins.applyClasspaths()
+}
+
+ourConf.applyPlugins()
+

@@ -1,0 +1,16 @@
+{
+    "build.date": "2018-01-11T00:54:25+0000",
+    "dependencies": [
+        
+    ],
+    "java.vendor": "Oracle Corporation",
+    "java.version": "1.8.0_151",
+    "os.arch": "x86_64",
+    "os.name": "Mac OS X",
+    "os.version": "10.12.6",
+    "project.name": "spring-framework",
+    "project.version": "unspecified",
+    "source.compatibility": "1.8",
+    "target.compatibility": "1.8",
+    "user.name": "kramerica"
+}

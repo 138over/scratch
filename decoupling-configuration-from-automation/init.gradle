@@ -1,0 +1,57 @@
+
+def cfg = new groovy.json.JsonSlurper().parseText(new File('cfg.json').text)
+
+println "PROJECT : ${project.buildscript}"
+
+class OurPlugins {
+    Map cfg
+    ScriptHandler buildscript
+    Project project
+    
+    OurPlugins(project, cfg) {
+        this.cfg = cfg
+        this.project = project
+        this.buildscript = project.buildscript
+    }
+
+    def applyRepos() {
+        cfg.repo.each { r ->
+            buildscript.repositories.maven { m ->
+                m.url = r.url
+            }
+        }
+    }
+
+    def applyClasspaths() {
+        cfg.classpath.each { c ->
+            buildscript.dependencies {
+                classpath c
+            }
+        }
+    }
+}
+
+class OurConf {
+    Map cfg
+    List plugins
+    Project project
+
+    OurConf(project, cfg) {
+        this.project = project
+        this.cfg = cfg
+        this.plugins = cfg.plugins
+    }
+
+    def applyPlugins() {
+        plugins.each { p ->
+            project.getPluginManager().apply(p.id)
+        }
+    }
+}
+
+allprojects {
+    extensions.create('ourPlugins', OurPlugins, project,cfg)
+    extensions.create('ourConf', OurConf, project, cfg)
+}
+
+
