@@ -1,0 +1,191 @@
+<html>
+<head>
+    <title>Workspace Grid</title>
+
+    <!-- Reference -->
+    <!-- https://www.jstree.com/docs/html/ -->
+    <!-- https://github.com/adamjimenez/jstree-table -->
+
+    <link rel="stylesheet" type="text/css" href="https://static.jstree.com/3.3.0/assets/dist/themes/default/style.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.2.js"></script>
+    <script type="text/javascript" src="https://static.jstree.com/latest/assets/dist/jstree.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://rawgit.com/adamjimenez/jstree-table/master/jstreetable.js"></script>
+
+
+    <script type="text/javascript">//<![CDATA[
+        window.onload=function(){
+            var data;
+            data = [
+                {
+                    text: "Project Cosmo",
+                    state: {
+                        opened: true
+                    },
+                    data: {
+                        cola: '<label><input type="checkbox"></label>',
+                        colb: '<label><input type="checkbox"></label>',
+                        colc: '<label><input type="checkbox"></label>',
+                        cold: '<label><input type="checkbox"></label>',
+                        cole: '<label><input type="checkbox"></label>',
+                        colf: '<label><input type="checkbox"></label>',
+                        colg: '<label><input type="checkbox"></label>',
+                        colh: '<label><input type="checkbox"></label>'
+                    }, 
+                    children: [
+                        {
+                            text: "cosmo.git",
+                            state: {
+                                opened: true
+                            },
+                            data: {
+                                cola: '<label><input type="checkbox"></label>',
+                                colb: '<label><input type="checkbox"></label>',
+                                colc: '<label><input type="checkbox"></label>',
+                                cold: '<label><input type="checkbox"></label>',
+                                cole: '<label><input type="checkbox"></label>',
+                                colf: '<label><input type="checkbox"></label>',
+                                colg: '<label><input type="checkbox"></label>',
+                                colh: '<label><input type="checkbox"></label>'
+                            }, 
+                            children:[
+                                { 
+                                    text: "cosmo-core.git", 
+                                    data: {
+                                        cola: '<label><input type="checkbox"></label>', 
+                                        colb: '<label><input type="checkbox"></label>',
+                                        colc: '<label><input type="checkbox"></label>',
+                                        cold: '<label><input type="checkbox"></label>',
+                                        cole: '<label><input type="checkbox"></label>',
+                                        colf: '<label><input type="checkbox"></label>',
+                                        colg: '<label><input type="checkbox"></label>',
+                                        colh: '<label><input type="checkbox"></label>'
+                                    }
+                                },
+                                { 
+                                    text: "cosmo-framework.git", 
+                                    data: {
+                                        cola: '<label><input type="checkbox"></label>', 
+                                        colb: '<label><input type="checkbox"></label>',
+                                        colc: '<label><input type="checkbox"></label>',
+                                        cold: '<label><input type="checkbox"></label>',
+                                        cole: '<label><input type="checkbox"></label>',
+                                        colf: '<label><input type="checkbox"></label>',
+                                        colg: '<label><input type="checkbox"></label>',
+                                        colh: '<label><input type="checkbox"></label>'
+                                    }
+                                },
+                                { 
+                                    text: "cosmo-ui.git", 
+                                    data: {
+                                        cola: '<label><input type="checkbox"></label>', 
+                                        colb: '<label><input type="checkbox"></label>',
+                                        colc: '<label><input type="checkbox"></label>',
+                                        cold: '<label><input type="checkbox"></label>',
+                                        cole: '<label><input type="checkbox"></label>',
+                                        colf: '<label><input type="checkbox"></label>',
+                                        colg: '<label><input type="checkbox"></label>',
+                                        colh: '<label><input type="checkbox"></label>'
+                                    }
+                                }
+                            ]
+                        }, 
+                        {
+                            text: "newman.git",
+                            state: {
+                                opened: true
+                            },
+                            data: {
+                                cola: '<label><input type="checkbox"></label>',
+                                colb: '<label><input type="checkbox"></label>',
+                                colc: '<label><input type="checkbox"></label>',
+                                cold: '<label><input type="checkbox"></label>',
+                                cole: '<label><input type="checkbox"></label>',
+                                colf: '<label><input type="checkbox"></label>',
+                                colg: '<label><input type="checkbox"></label>',
+                                colh: '<label><input type="checkbox"></label>'
+                            }, 
+                            children:[
+                                { 
+                                    text: "newman-core.git", 
+                                    data: {
+                                        cola: '<label><input type="checkbox"></label>', 
+                                        colb: '<label><input type="checkbox"></label>',
+                                        colc: '<label><input type="checkbox"></label>',
+                                        cold: '<label><input type="checkbox"></label>',
+                                        cole: '<label><input type="checkbox"></label>',
+                                        colf: '<label><input type="checkbox"></label>',
+                                        colg: '<label><input type="checkbox"></label>',
+                                        colh: '<label><input type="checkbox"></label>'
+                                    }
+                                },
+                                { 
+                                    text: "newman-framework.git", 
+                                    data: {
+                                        cola: '<label><input type="checkbox"></label>', 
+                                        colb: '<label><input type="checkbox"></label>',
+                                        colc: '<label><input type="checkbox"></label>',
+                                        cold: '<label><input type="checkbox"></label>',
+                                        cole: '<label><input type="checkbox"></label>',
+                                        colf: '<label><input type="checkbox"></label>',
+                                        colg: '<label><input type="checkbox"></label>',
+                                        colh: '<label><input type="checkbox"></label>'
+                                    }
+                                },
+                                { 
+                                    text: "newman-ui.git", 
+                                    data: {
+                                        cola: '<label><input type="checkbox"></label>', 
+                                        colb: '<label><input type="checkbox"></label>',
+                                        colc: '<label><input type="checkbox"></label>',
+                                        cold: '<label><input type="checkbox"></label>',
+                                        cole: '<label><input type="checkbox"></label>',
+                                        colf: '<label><input type="checkbox"></label>',
+                                        colg: '<label><input type="checkbox"></label>',
+                                        colh: '<label><input type="checkbox"></label>'
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ];
+            $("div#workspace").jstree({
+                plugins: ["table"],
+                core: {
+                    data: data
+                },
+                table: {
+                    columns: [
+                        {width: 300, header: "Workspace Configuration"},
+                        {width: 60, value: "cola", header: "Source"},
+                        {width: 60, value: "colb", header: "Binary"},
+                        {width: 60, value: "colc", header: "Docs"},
+                        {width: 60, value: "cold", header: "Test"},
+                        {width: 60, value: "cole", header: "Tools"},
+                        {width: 60, value: "colf", header: "Jenkins"},
+                        {width: 60, value: "colg", header: "Docker"},
+                        {width: 60, value: "colh", header: "Jira"}
+                    ],
+                    resizable: false,
+                    width: 800,
+                    height: 400
+                }
+            });
+        }//]]> 
+    </script>
+
+</head>
+
+<body>
+    <div id="workspace"></div>
+    <style type="text/css">
+        .jstree-table-header {
+            background-color: #fff; color: #000;
+        }
+        .jstree-table-separator-regular {
+            border-color: #fff;
+        }
+    </style>
+</body>
+</html>
