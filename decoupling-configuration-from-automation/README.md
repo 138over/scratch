@@ -23,20 +23,21 @@ Gradle Example with Spring
 ```
 given a matrix of configurations
 retrieve a slice of the the matrix
-and dynamically assign to gradle configuration elements
+and dynamically assign to gradle configuration tasks
 then run gradle buildEnvironment buildInfo
 ```
 
-the challenge initially is how to configure the buildscript section of gradle. 
-the buildscript section of gradle setupthe environment to build the project.  
+The challenge initially is how to configure the buildscript section of gradle. 
+The buildscript section of gradle setups environment to build the project, including
+downloads it's plugin dependencies and setting the classpath.  
 
-my first thought was metaprogramming the gradle dsl. tried playing the meta 
+My first thought was metaprogramming the gradle dsl. Tried playing the meta 
 game and it works when inlined within the buildscript {} block but does not 
-work when using apply from statement
+work when using gradle 'apply from' statement
 
 ```
-    this works inline i.e build.gradle. but if i want to have this functionality shared among
-    many builds, and even for an organization, i want to use the gradle apply functionality,
+    This works inline i.e build.gradle. But if I want to have this functionality shared among
+    many builds, and even for an organization, I want to use the gradle 'apply from' functionality,
     but it does not work seemelessly... 
 
     buildscript {
@@ -64,7 +65,8 @@ Searching for info on how this might be done with the gradle dsl
 Luke's approach will work!  A quick mockup...  
 
 ```
-given an external configuration file in json format
+Given an external configuration file in json format, define the plugin repositories to use, 
+the plugins to load, and the classpath to use the plugins
 
 cfg.json
 ~~~~~~~~~~
@@ -100,7 +102,7 @@ cfg.json
 }
 ```
 
-Create an external grade script to import into the build.gradle and implement 
+Create an external gradle script to import into the build.gradle and implement 
 extensions to handle the mapping of external configuration to gradle configuration.
 The external script will slurp in the json configuration data. Again, this external
 script would be a candidate to share across projects, teams, organization
@@ -165,14 +167,10 @@ allprojects {
 ```
 
 Now the build.gradle is a consumer of the external script, and
-configuration has been removed from within the build.gradle's  buildscript section
+configuration has been removed from within the build.gradle's buildscript section
 
 build.gradle
 ~~~~~~~~~~
-import groovy.json.JsonOutput
-import groovy.json.JsonSlurper
-
-
 buildscript {
     apply from: project.file('init.gradle')
 
@@ -183,7 +181,6 @@ buildscript {
 ourConf.applyPlugins()
 ```
 
-With this approach I can decouple the entire configuration from the build.gradle, and have build pipelines that are reusable between projects, teams, organizations. 
-
-[gradle  example of simple tasks](https://github.com/138over/woo-docs/blob/master/src/build-concepts/gradle.tasks.md)
+With this approach I can decouple the entire configuration from the build.gradle, and have build pipelines that are reusable between projects, teams, organizations. Another way to think of this is, define a pipeline as a template, the only thing that changes is 
+the configuration, and this is how we arrive at, [gradle  example of simple tasks](https://github.com/138over/woo-docs/blob/master/src/build-concepts/gradle.tasks.md)
 
