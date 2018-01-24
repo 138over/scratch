@@ -7,22 +7,16 @@ Decoupling configuration from the automation tool that is used to run a pipeline
 * simplicity  
 * change management  
 
-Instead, I'm using data format and utility that provides the ability to define a matrix of configurations, 
+Instead, I'm using a data format and utility that provides the ability to define a matrix of configurations, 
 and then extract a slice (vertice) of the matrix, which becomes the input to the tool that
-runs the automation pipeline. [Hocon is my current tool of choice](https://github.com/138over/woo-config)  
+runs the automation pipeline. [Hocon is my current tool of choice](https://github.com/138over/woo-config).   
 
 Google achieves this via [Gyp](https://gyp.gsrc.io) and [GN](https://chromium.googlesource.com/chromium/src/tools/gn/).  There is no reason the entire product lifecycle, cannot be modeled as data, independently of tasks...
 
 The tasks should be dumb, declarative, single purpose, and the configuration smart. 
 
-Gradle Tasks
----
-![A gradle  example of simple tasks](https://github.com/138over/woo-docs/blob/master/src/build-concepts/gradle.tasks.md)
-
-
-GnuMake Tasks
----
-![A gnu-make  example of simple tasks](https://github.com/138over/woo-docs/blob/master/src/build-concepts/makefile.target.md)  
+* [gradle  example of simple tasks](https://github.com/138over/woo-docs/blob/master/src/build-concepts/gradle.tasks.md)  
+* [gnu-make  example of simple tasks](https://github.com/138over/woo-docs/blob/master/src/build-concepts/makefile.target.md)  
 
 Gradle Example with Spring
 ---
@@ -191,5 +185,5 @@ ourConf.applyPlugins()
 
 With this approach I can decouple the entire configuration from the build.gradle, and have build pipelines that are reusable between projects, teams, organizations. 
 
-![A gradle  example of simple tasks](https://github.com/138over/woo-docs/blob/master/src/build-concepts/gradle.tasks.md)
+[gradle  example of simple tasks](https://github.com/138over/woo-docs/blob/master/src/build-concepts/gradle.tasks.md)
 
