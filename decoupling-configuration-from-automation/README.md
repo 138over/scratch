@@ -15,8 +15,8 @@ Google achieves this via [Gyp](https://gyp.gsrc.io) and [GN](https://chromium.go
 
 The tasks should be dumb, declarative, single purpose, and the configuration smart. 
 
-* [gradle  example of simple tasks](https://github.com/138over/woo-docs/blob/master/src/build-concepts/gradle.tasks.md)  
-* [gnu-make  example of simple tasks](https://github.com/138over/woo-docs/blob/master/src/build-concepts/makefile.target.md)  
+* [gradle example of simple tasks](https://github.com/138over/woo-docs/blob/master/src/workspaces/gradle.tasks.md)  
+* [gnu-make  example of simple tasks](https://github.com/138over/woo-docs/blob/master/src/workspaces/makefile.target.md)  
 
 Gradle Example with Spring
 ---
