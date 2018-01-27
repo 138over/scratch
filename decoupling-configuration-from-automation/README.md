@@ -9,7 +9,7 @@ Decoupling configuration from the automation tool that is used to run a pipeline
 
 Instead, I'm using a data format and utility that provides the ability to define a matrix of configurations, 
 and then extract a slice (vertice) of the matrix, which becomes the input to the tool that
-runs the automation pipeline. [Hocon is my current tool of choice](https://github.com/138over/woo-config).   
+runs the automation pipeline. [Hocon is my current tool of choice](https://github.com/138over/woo-utils/blob/master/src/doc/woo-config.md)  
 
 Google achieves this via [Gyp](https://gyp.gsrc.io) and [GN](https://chromium.googlesource.com/chromium/src/tools/gn/).  There is no reason the entire product lifecycle, cannot be modeled as data, independently of tasks...
 
