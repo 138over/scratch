@@ -28,17 +28,14 @@ then run gradle buildEnvironment buildInfo
 ```
 
 The challenge initially is how to configure the buildscript section of gradle. 
-The buildscript section of gradle setups environment to build the project, including
-downloads it's plugin dependencies and setting the classpath.  
+The buildscript section of gradle sets up the environment to build the project, including downloads its plugin dependencies and setting the classpath.  
 
 My first thought was metaprogramming the gradle dsl. Tried playing the meta 
 game and it works when inlined within the buildscript {} block but does not 
 work when using gradle 'apply from' statement
 
 ```
-    This works inline i.e build.gradle. But if I want to have this functionality shared among
-    many builds, and even for an organization, I want to use the gradle 'apply from' functionality,
-    but it does not work seemelessly... 
+    This works inline i.e build.gradle. But if I want to have this functionality shared among many builds, and even for an organization, I want to use the gradle 'apply from' functionality, but it does not work... 
 
     buildscript {
         repositories.metaClass.buildscriptConfig { repo ->
@@ -182,5 +179,5 @@ ourConf.applyPlugins()
 ```
 
 With this approach I can decouple the entire configuration from the build.gradle, and have build pipelines that are reusable between projects, teams, organizations. Another way to think of this is, define a pipeline as a template, the only thing that changes is 
-the configuration, and this is how we arrive at, [gradle  example of simple tasks](https://github.com/138over/woo-docs/blob/master/src/build-concepts/gradle.tasks.md)
+the configuration, and this is how we arrive at, [gradle  example of simple tasks](https://github.com/138over/woo-docs/blob/master/src/workspaces/gradle.tasks.md)
 
