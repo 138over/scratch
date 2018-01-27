@@ -178,6 +178,5 @@ buildscript {
 ourConf.applyPlugins()
 ```
 
-With this approach I can decouple the entire configuration from the build.gradle, and have build pipelines that are reusable between projects, teams, organizations. Another way to think of this is, define a pipeline as a template, the only thing that changes is 
-the configuration, and this is how we arrive at, [gradle  example of simple tasks](https://github.com/138over/woo-docs/blob/master/src/workspaces/gradle.tasks.md)
+With this approach I can decouple the entire configuration from the build.gradle, and have build pipelines that are reusable between projects, teams, organizations, venodrs, partners... Another way to think of this is, define a pipeline as a template, the only thing that changes is the configuration, and this is how we arrive at, [gradle  example of simple tasks](https://github.com/138over/woo-docs/blob/master/src/workspaces/gradle.tasks.md). Here is another [example](https://github.com/138over/woo-gradle-plugin/blob/master/src/test/groovy/com/qbalsoftware/gradle/BuildLogicFunctionalSpec.groovy) of decoupling configuration from the task
 
