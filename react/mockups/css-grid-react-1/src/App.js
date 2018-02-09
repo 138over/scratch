@@ -11,7 +11,7 @@ class App extends Component {
                         Are creatures of the cosmos intelligent beings bits of 
                         moving fluff a very small stage in a vast cosmic arena 
                         Tunguska event, rich in heavy atoms concept of the 
-                        number one the only home we've ever known astonishment 
+                        number one the only home we have ever known astonishment 
                         another world great turbulent clouds white dwarf.
                     </p>
                 </Prose>
@@ -100,7 +100,7 @@ const BoxHeader = styled.h2`
 `
 
 const BoxMenu = styled.ul`
-    list-stylie: none;
+    list-style: none;
     padding: 0;
     margin: 0;
     
