@@ -1,10 +1,8 @@
 Overview
 ---
-Tyler Sticka wrote a few blog entries on working with CSS Grid, 
-[First CSS Grid Layout by Cloudfour](https://cloudfour.com/thinks/first-css-grid-layout/) and 
-[Breaking out with CSS Grid by Cloudfour](https://cloudfour.com/thinks/breaking-out-with-css-grid-layout/)  
+Tyler Sticka wrote this [First CSS Grid Layout by Cloudfour](https://cloudfour.com/thinks/first-css-grid-layout/) blog entry  
 
-* Given those blog entries as a starting point  
+* Given the blog entry as a starting point  
 * Then convert to use react styled-components
 
 Getting Started
@@ -13,9 +11,13 @@ Getting Started
 ```
 # ------------------------------------------------------------------------
 # Environment
-# macos:  10.12.6
-# node:   v8.9.3
-# npm:    5.5.1
+#   MacOS:    10.12.6
+#   Node:     v8.9.3
+#   NPM:      5.5.1
+#   Chrome:   64.0.3282.140
+#
+# Chrome Extensions
+#   React Developer Tools 3.1.0
 # ------------------------------------------------------------------------
 
 # bootstrap the react application 
