@@ -35,3 +35,6 @@ Getting Started
 # shutdown server and browser
     kill -HUP $(lsof -t -i:3000)
 ```
+
+![CSS Grid Screenshot](https://github.com/138over/scratch/blob/master/react/mockups/css-grid-react-1/css-grid-react-1.gif)
+
