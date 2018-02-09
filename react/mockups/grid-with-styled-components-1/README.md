@@ -11,8 +11,14 @@ Getting Started
 ---
 
 ```
+# ------------------------------------------------------------------------
+# Environment
+# macos:  10.12.6
+# node:   v8.9.3
+# npm:    5.5.1
+# ------------------------------------------------------------------------
+
 # bootstrap the react application 
-    cd grid-with-styled-components-1
     npm install
     
 # stop anything running on port 3000, including chrome browser
