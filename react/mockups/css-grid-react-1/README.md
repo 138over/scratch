@@ -1,6 +1,6 @@
 Overview
 ---
-Tyler Sticka of Cloudfour wrote this [First CSS Grid LayoutCloud](https://cloudfour.com/thinks/first-css-grid-layout/) blog entry
+Tyler Sticka of Cloudfour wrote this [First CSS Grid LayoutCloud](https://cloudfour.com/thinks/first-css-grid-layout/) blog entry. Thank You, Tyler!
 
 * Given the blog entry as a starting point  
 * Then convert to use react styled-components
