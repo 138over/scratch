@@ -1,9 +1,9 @@
 Overview
 ---
-Tyler Sticka of Cloudfour wrote this [First CSS Grid LayoutCloud](https://cloudfour.com/thinks/first-css-grid-layout/) blog entry
+Tyler Sticka of CloudFour wrote this [Breaking Out with CSS Grid Layout](https://cloudfour.com/thinks/breaking-out-with-css-grid-layout/)
 
 * Given the blog entry as a starting point  
-* Then convert to use react styled-components
+* Then convert Asymmetric Layout Demo #1 to use react styled-components
 
 Getting Started
 ---
@@ -36,5 +36,5 @@ Getting Started
     kill -HUP $(lsof -t -i:3000)
 ```
 
-![CSS Grid Screenshot](https://github.com/138over/scratch/blob/master/react/mockups/css-grid-react-1/css-grid-react-1.gif)
+![CSS Grid Screenshot](https://github.com/138over/scratch/blob/master/react/mockups/css-grid-react-2/css-grid-react-2.gif)
 
