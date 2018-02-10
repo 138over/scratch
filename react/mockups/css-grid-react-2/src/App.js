@@ -52,7 +52,11 @@ injectGlobal`
 
 const Prose = styled.div`
     display: grid;
-    grid-template-columns: [full-start] minmax(1em, 1fr) [main-start] minmax(0, 40em) [main-end] minmax(1em, 1fr) [full-end];
+    grid-template-columns: 
+        [full-start] minmax(1em, 1fr) 
+        [main-start] minmax(0, 40em) 
+        [main-end] minmax(1em, 1fr) 
+        [full-end];
     
     > * {
         grid-column: main;
@@ -61,9 +65,13 @@ const Prose = styled.div`
 
 const ProseSplash = styled.div`
     grid-column: full;
-    background-color: #aacae1;
-    background-image: linear-gradient(182deg, transparent 74%, #016b59 74.1%), linear-gradient(178deg, transparent 68%, #018e77 68.1%), linear-gradient(181deg, transparent 58%, #01b295 58.1%), linear-gradient(179deg, transparent 50%, #2bbfa7 50.1%);
     text-align: center;
+    background-color: #aacae1;
+    background-image: 
+        linear-gradient(182deg, transparent 74%, #016b59 74.1%), 
+        linear-gradient(178deg, transparent 68%, #018e77 68.1%), 
+        linear-gradient(181deg, transparent 58%, #01b295 58.1%), 
+        linear-gradient(179deg, transparent 50%, #2bbfa7 50.1%);
     
     > img {
         max-width: 100%;
