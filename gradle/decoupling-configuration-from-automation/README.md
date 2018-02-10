@@ -35,7 +35,9 @@ game and it works when inlined within the buildscript {} block but does not
 work when using gradle 'apply from' statement
 
 ```
-    This works inline i.e build.gradle. But if I want to have this functionality shared among many builds, and even for an organization, I want to use the gradle 'apply from' functionality, but it does not work... 
+    This works inline i.e build.gradle. But if I want to have this functionality 
+    shared among many builds, and even for an organization, I want to use the 
+    gradle 'apply from' functionality, but it does not work... 
 
     buildscript {
         repositories.metaClass.buildscriptConfig { repo ->
