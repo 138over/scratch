@@ -2,6 +2,11 @@ Sandbox of Experiments, Prototypes, Projects of Interest
 ---
 Requires [bootstrap environment](https://github.com/138over/woo-bootstrap/blob/master/Makefile)  
 
+Build Tool Interests
+---
+[Ninja](https://ninja-build.org)  
+[Tup](http://gittup.org/tup/)   
+
 Front-End Interests
 ---
 [D3 and Graphiz](https://github.com/magjac/d3-graphviz)  
@@ -12,6 +17,7 @@ Front-End Interests
 [React](https://reactjs.org)  
 [React Router 4](https://reacttraining.com/react-router/)  
 [React Styled Components](https://reacttraining.com/react-router/)  
+[Webpack](https://developers.google.com/web/fundamentals/performance/webpack/)  
 
 Front-End Structure
 ---
