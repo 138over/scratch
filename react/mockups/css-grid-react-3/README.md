@@ -1,6 +1,6 @@
 Overview
 ---
-Tyler Sticka of CloudFour wrote this [Breaking Out with CSS Grid Layout](https://cloudfour.com/thinks/breaking-out-with-css-grid-layout/)
+Tyler Sticka of CloudFour wrote this [Breaking Out with CSS Grid Layout](https://cloudfour.com/thinks/breaking-out-with-css-grid-layout/). Thank You, Tyler!
 
 * Given the blog entry as a starting point  
 * Then convert Asymmetric Layout Demo #2 to use react styled-components
