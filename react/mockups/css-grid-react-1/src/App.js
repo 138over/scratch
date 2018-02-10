@@ -43,7 +43,7 @@ class App extends Component {
                         small stage in a vast cosmic arena extraordinary 
                         claims require extraordinary evidence encyclopaedia 
                         galactica brain is the seed of intelligence courage 
-                        of our questions. Venture dream of the mind's eye 
+                        of our questions. Venture dream of the minds eye 
                         ship of the imagination? Hydrogen atoms circumnavigated.
                         A very small stage in a vast cosmic arena Euclid star 
                         stuff harvesting star light vastness is bearable only 
