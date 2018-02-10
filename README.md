@@ -17,6 +17,9 @@ Front-End Interests
 [React](https://reactjs.org)  
 [React Router 4](https://reacttraining.com/react-router/)  
 [React Styled Components](https://reacttraining.com/react-router/)  
+[Typography Modular Scale](http://www.modularscale.com)  
+[Typography Type Scale](https://type-scale.com)  
+[Typography Responsive Ratio Media Queries](https://zellwk.com/blog/responsive-modular-scale/)  
 [Webpack](https://developers.google.com/web/fundamentals/performance/webpack/)  
 
 Front-End Structure
