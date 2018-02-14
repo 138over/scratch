@@ -2,6 +2,11 @@ Sandbox of Experiments, Prototypes, Projects of Interest
 ---
 Requires [bootstrap environment](https://github.com/138over/woo-bootstrap/blob/master/Makefile)  
 
+
+James is Killing Me!
+---
+[Lionel Richie is in my code!](https://www.youtube.com/watch?v=D5xh0ZIEUOE&t=5m52s)   
+
 Autonomy Ecosystem  
 ---
 * [a16z Frank Chen - 16 Questions about self-driving cars](https://a16z.com/2017/01/06/selfdriving-cars-frank-chen/)  
