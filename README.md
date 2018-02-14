@@ -2,6 +2,11 @@ Sandbox of Experiments, Prototypes, Projects of Interest
 ---
 Requires [bootstrap environment](https://github.com/138over/woo-bootstrap/blob/master/Makefile)  
 
+Autonomy Ecosystem  
+---
+* [a16z Frank Chen - 16 Questions about self-driving cars](https://a16z.com/2017/01/06/selfdriving-cars-frank-chen/)  
+* [a16z Frank Chen Summer - Automony Ecosytem](https://a16z.com/2018/02/03/autonomy-ecosystem-frank-chen-summit/)  
+
 Build Tool Interests
 ---
 * [Ninja](https://ninja-build.org)  
@@ -66,6 +71,9 @@ Back-End Interests
 * [land](https://github.com/oleiade/lane)  golang queues, stacks and deques implementation library  
 * [linkerd.io](https://linkerd.io)  service to service communication
 
+Databases
+---
+* [Your Database Should Work Like a CDN](https://www.cockroachlabs.com/blog/distributed-database-performance/)  
 
 Delivery Pipelines and Compute Grids
 ---
