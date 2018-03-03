@@ -98,7 +98,12 @@ Policy Management
 
 Python
 ---
+* [Jimmy Song: Aync - An Easier Way to do Concurrency](https://www.youtube.com/watch?v=Bv25Dwe84g0)  
 * [Raymond Hettinger: Best practices for intelligible code](https://www.youtube.com/watch?v=wf-BqAjZb8M&feature=youtu.be&t=691)  
+* [Raymond Hettinger: Python's Class Development Toolkit](https://www.youtube.com/watch?v=HTLu2DFOdTg)  
+* [Raymond Hettinger: Concurrency](https://www.youtube.com/watch?v=9zinZmE3Ogk)  
+* [Raymond Hettinger: Modern Dictionaries](https://www.youtube.com/watch?v=p33CVV29OG8&t=1s)  
+* [Raymond Hettings: Thinking about Concurrency](https://www.youtube.com/watch?v=Bv25Dwe84g0)  
 
 Supply Chain
 ---
